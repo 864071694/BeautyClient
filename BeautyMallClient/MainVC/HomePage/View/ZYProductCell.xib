@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZYProductCell" id="gTV-IL-0wX" customClass="ZYProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="252"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="252"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3IC-eo-e6P">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="212"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y56.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aM-jg-XnR">
+                        <rect key="frame" x="0.0" y="222" width="100" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBW-R5-j6V">
+                        <rect key="frame" x="81" y="222" width="69" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="0" image="like_count">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rBW-R5-j6V" secondAttribute="bottom" constant="9" id="1ZF-LV-fpI"/>
+                <constraint firstAttribute="bottom" secondItem="3IC-eo-e6P" secondAttribute="bottom" constant="40" id="D9V-uc-Du1"/>
+                <constraint firstItem="rBW-R5-j6V" firstAttribute="top" secondItem="3IC-eo-e6P" secondAttribute="bottom" constant="10" id="QD6-PL-oQO"/>
+                <constraint firstItem="rBW-R5-j6V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="81" id="U2N-d2-m2L"/>
+                <constraint firstItem="5aM-jg-XnR" firstAttribute="top" secondItem="3IC-eo-e6P" secondAttribute="bottom" constant="10" id="V3O-Gv-7mG"/>
+                <constraint firstItem="3IC-eo-e6P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YKD-mQ-luV"/>
+                <constraint firstAttribute="bottom" secondItem="5aM-jg-XnR" secondAttribute="bottom" constant="9" id="adQ-7w-YZe"/>
+                <constraint firstItem="3IC-eo-e6P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f7j-7y-DtS"/>
+                <constraint firstAttribute="trailing" secondItem="3IC-eo-e6P" secondAttribute="trailing" id="hpG-aa-w2j"/>
+                <constraint firstItem="5aM-jg-XnR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q8X-L7-zUz"/>
+                <constraint firstAttribute="trailing" secondItem="5aM-jg-XnR" secondAttribute="trailing" constant="50" id="qQs-Id-EEL"/>
+                <constraint firstAttribute="trailing" secondItem="rBW-R5-j6V" secondAttribute="trailing" id="w8R-74-Mp1"/>
+            </constraints>
+            <size key="customSize" width="150" height="252"/>
+            <connections>
+                <outlet property="imgV" destination="3IC-eo-e6P" id="1ce-2a-kBX"/>
+                <outlet property="likeBtn" destination="rBW-R5-j6V" id="l1V-pL-8T3"/>
+                <outlet property="priceLB" destination="5aM-jg-XnR" id="Q7D-eY-2UI"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="152"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="like_count" width="32" height="32"/>
+    </resources>
+</document>

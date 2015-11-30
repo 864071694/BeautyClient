@@ -1,0 +1,49 @@
+//
+//  BeautyMallClient.pch
+//  BeautyMallClient
+//
+//  Created by 张泽楠 on 15/11/22.
+//  Copyright © 2015年 √Ç¬∫‚Ä†√ä‚â•Œ©√ä‚Ä¢‚Ä†. All rights reserved.
+//
+
+#ifndef BeautyMallClient_pch
+#define BeautyMallClient_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <AFNetworking.h>
+
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import <A2DynamicDelegate.h>
+
+#import <Masonry.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+
+#import "BlockCycle.h"
+#import "Singleton.h"
+#import "PXISARC.h"
+#import "MyLog.h"
+#import "UIDevice+Utils.h"
+#import "UIButton+Utils.h"
+#import "NSString+Utils.h"
+#import "NSString+ZYExtension.h"
+#import "MBProgressHUD+ZY.h"
+#import "CustomMisc.h"
+#import "AFNetworking/AFNetworkRequest.h"
+
+#define ScreenW CGRectGetWidth([UIScreen mainScreen].bounds)
+#define ScreenH CGRectGetHeight([UIScreen mainScreen].bounds)
+
+#define GRAYCOLOR [UIColor colorWithWhite:0.918 alpha:1.000]
+#define RANDOMCOLOR [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1]
+#define PINKCOLOR [UIColor colorWithRed:0.984 green:0.153 blue:0.420 alpha:1.000]
+#define CUSTOM_Tab_H 49
+#define NAVGATIONNAR_H 64
+
+#endif /* BeautyMallClient_pch */
